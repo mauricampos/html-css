@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+
+            RECOMENDADO USAR O em OU px
+            */
+            font-size: 1em;
+
+            /* Parâmetros para font-weigth: ligther normal bold bolder */
+        }
+
+        h1{
+            /* 
+            font-family: 'Work Sans';
+            font-weigth: bolder;
+            font-size: 3em;
+            font-style: italic;
+            
+            Com o 'sorthand font' você incluir todas as CSS da font de uma maneira única, usandos os declarações nessa sequência: font style -> font-weigth -> font-size -> font-family 
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus debitis voluptate est autem distinctio facere quasi repellat ipsa dolorum, veniam, esse voluptates commodi ex cum ad laborum quisquam, quidem fuga! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, totam quae! Rerum, provident architecto soluta earum unde maxime quae, ad accusamus iste minima magni. Molestias impedit placeat amet est expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita, atque voluptatum quaerat repellendus id provident at iusto blanditiis mollitia. Consequuntur dicta aut ullam eos commodi repudiandae quaerat laboriosam obcaecati!</p>
+    <h2>Sobtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi exercitationem reprehenderit sit saepe sed eaque accusantium dolores esse itaque maiores. Recusandae quo consequuntur doloremque possimus, dolores assumenda perferendis itaque nemo! lore</p>
+</body>
+</html>
