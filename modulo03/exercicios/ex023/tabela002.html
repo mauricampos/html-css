@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) {  /* 2n-1 */
+            background-color: white;
+        }
+        
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +57,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +67,11 @@
     -->
     
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,10 +186,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">213.317.639</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, necessitatibus autem. Amet dicta qui provident ab perferendis, odio veritatis officiis suscipit ad excepturi rerum expedita porro laboriosam omnis ipsum magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique corporis tempora, voluptate numquam quisquam molestiae quod autem eius animi commodi fugit a, nostrum, doloremque repellat necessitatibus incidunt sequi laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque error modi blanditiis dolores? Provident quam accusamus delectus molestias architecto quidem ab rerum minus, nostrum quo. Nemo sit animi accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus voluptate tempore suscipit. Sit a consequuntur, suscipit, et illo praesentium at voluptate dolores ea necessitatibus voluptas in quia laudantium nobis!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, necessitatibus autem. Amet dicta qui provident ab perferendis, odio veritatis officiis suscipit ad excepturi rerum expedita porro laboriosam omnis ipsum magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique corporis tempora, voluptate numquam quisquam molestiae quod autem eius animi commodi fugit a, nostrum, doloremque repellat necessitatibus incidunt sequi laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque error modi blanditiis dolores? Provident quam accusamus delectus molestias architecto quidem ab rerum minus, nostrum quo. Nemo sit animi accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus voluptate tempore suscipit. Sit a consequuntur, suscipit, et illo praesentium at voluptate dolores ea necessitatibus voluptas in quia laudantium nobis!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, necessitatibus autem. Amet dicta qui provident ab perferendis, odio veritatis officiis suscipit ad excepturi rerum expedita porro laboriosam omnis ipsum magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique corporis tempora, voluptate numquam quisquam molestiae quod autem eius animi commodi fugit a, nostrum, doloremque repellat necessitatibus incidunt sequi laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque error modi blanditiis dolores? Provident quam accusamus delectus molestias architecto quidem ab rerum minus, nostrum quo. Nemo sit animi accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus voluptate tempore suscipit. Sit a consequuntur, suscipit, et illo praesentium at voluptate dolores ea necessitatibus voluptas in quia laudantium nobis!</p>
+    
 </body>
 </html>
